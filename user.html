@@ -10,8 +10,8 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title></title>
-    <script type="module" crossorigin src="/workway-work/assets/main-C3D6OdFI.js"></script>
-    <link rel="stylesheet" crossorigin href="/workway-work/assets/main-D_bCkv3F.css">
+    <script type="module" crossorigin src="/workway-work/assets/main-BEeiK24t.js"></script>
+    <link rel="stylesheet" crossorigin href="/workway-work/assets/main-t3zX5-bM.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -74,7 +74,12 @@ list_alt
   </li>
 </ul>
 <div class="tab-content rounded-panel p-5 shadow" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">個人資料</div>
+  <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+    個人資料
+  </div>
+
+
+
   <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab">
     <h2 class="fs-4 mb-4">預約紀錄</h2>
     <div class="d-flex gap-4 mb-5">
@@ -126,8 +131,6 @@ filter_list
     </tr>
   </thead>
   <tbody>
-    
-
     <tr>
       <th scope="row">職涯定位-職涯探索包 | 6/6堂</th>
       <td>2025/11/11</td>
@@ -173,7 +176,102 @@ filter_list
   </tbody>
 </table>
   </div>
-  <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">職旅計畫</div>
+
+  <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">
+    <form action="">
+      <div class="d-flex gap-4">
+        <!--左表單-->
+        <div class="left-width flex-shrink-0">
+          <h2 class="fs-4 mb-3">職旅計劃概況</h2>
+          <p class="text-secondary">欄位皆為<span class="badge rounded-pill bg-danger ms-1">必填</span></p>
+        </div>
+        <!--右表單-->
+<div>
+  <!--職業狀態-->
+  <div class="mb-4">
+    <p class="mb-2">目前職業狀態</p>
+<div class="px-2">
+    <div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="job-fulltime" value="job-fulltime" checked>
+  <label class="form-check-label" for="job-fulltime">全職上班族</label>
+</div>
+<div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="job-
+parttime" value="job-
+parttime">
+  <label class="form-check-label" for="job-
+parttime">兼職工作者</label>
+</div>
+<div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="freelancer" value="freelancer">
+  <label class="form-check-label" for="freelancer">自由工作者/接案者</label>
+</div>
+<div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="digitalnomad" value="digitalnomad">
+  <label class="form-check-label" for="digitalnomad">數位遊牧者</label>
+</div>
+<div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="entrepreneur_company" value="entrepreneur_company">
+  <label class="form-check-label" for="entrepreneur_company">創業者/企業主</label>
+</div>
+<div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="unemployed" value="unemployed">
+  <label class="form-check-label" for="
+unemployed">待業中</label>
+</div>
+<div class="form-check form-check-inline me-4 mb-2">
+  <input class="form-check-input" type="radio" name="careerstatus" id="
+other" value="other">
+  <label class="form-check-label" for="other">其他</label>
+</div>
+</div>
+</div>
+  <!--工作產業-->
+<div class="mb-4">
+<div class="dropdown">
+  <button class="form-select py-3 text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    工作產業
+  </button>
+  <ul class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">科技</a></li>
+    <li><a class="dropdown-item" href="#">媒體</a></li>
+    <li><a class="dropdown-item" href="#">教育</a></li>
+    <li><a class="dropdown-item" href="#">金融</a></li>
+    <li><a class="dropdown-item" href="#">醫療健康</a></li>
+    <li><a class="dropdown-item" href="#">零售製造</a></li>
+    <li><a class="dropdown-item" href="#">服務業</a></li>
+    <li><a class="dropdown-item" href="#">藝術創意</a></li>
+     <li><a class="dropdown-item" href="#">非營利組織</a></li>
+  </ul>
+</div>
+</div>
+  <!--職業摘要-->
+<div class="mb-4">
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）" id="job-desc" style="height:160px" maxlength="300"></textarea>
+  <label for="job-desc">職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）</label>
+</div>
+</div>
+  <!--作品案例展示-->
+<div class="mb-4">
+  <div class="form-floating">
+  <input type="text" class="form-control" id="works" placeholder="作品案例展示">
+  <label for="works">作品案例展示</label>
+</div>
+</div>
+  <!--附件檔案-->
+<div>
+  <p class="mb-2">附件檔案</p>
+  <label for="fileupload" class="btn border"><span class="material-icons-outlined align-bottom me-1">
+file_download
+</span>上傳檔案</label>
+  <input type="file"  name="fileupload" id="fileupload">
+</div>
+  </div>
+</div>
+      </div>
+    </form>
+  </div>
 </div>
     </div>
   </div>
