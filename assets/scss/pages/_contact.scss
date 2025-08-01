@@ -2,3 +2,15 @@
     color: #4A69E8;
     text-decoration: underline;
 }
+.contact-form-img{
+&::after{
+content:"";
+width: 120px;
+height: 160px;
+display: block;
+background-image: url(/assets/images/contact/form-top.svg);
+right: 40px;
+top: -137px;
+position: absolute;
+}
+}
