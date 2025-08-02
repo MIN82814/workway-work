@@ -6,7 +6,9 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white: #fff !default;
+//$white: #fff !default;
+$white: #FCFCFD;
+
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -16,7 +18,20 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black: #000 !default;
+
+$gray-95: #F0F3F5;
+$gray-90: #E0E5EB;
+$gray-85: #D1D9E1;
+$gray-75: #B2BFCC;
+$gray-60: #8599AD;
+$gray-50: #667F99;
+$gray-30: #3D4D5C;
+$gray-10: #141A1F;
+
+
+
+//$black: #000 !default;
+$black: #141A1F;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -31,6 +46,15 @@ $grays: (
   "700": $gray-700,
   "800": $gray-800,
   "900": $gray-900) !default;
+  $grays: (
+  "95": $gray-95,
+  "90": $gray-90,
+  "85": $gray-85,
+  "75": $gray-75,
+  "60": $gray-60,
+  "50": $gray-50,
+  "30": $gray-30,
+  "10": $gray-10) !default;
 // scss-docs-end gray-colors-map
 // fusv-enable
 
@@ -286,8 +310,14 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
-$secondary: $gray-600 !default;
+//$primary: $blue !default;
+$primary: #4A69E8 ;
+//$secondary: $gray-600 !default;
+$secondary: #36C99F ;
+$black:#141A1F;
+
+
+
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -365,7 +395,8 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+//$enable-rfs: true !default;
+$enable-rfs: false !default;
 $enable-validation-icons: true !default;
 $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
@@ -397,11 +428,20 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,//4
+  2: $spacer * .5,//8
+  3: $spacer * .75,//12
+  4: $spacer,       //16
+  5: $spacer * 1.5,//24
+  6: $spacer * 3,//48
+  7: $spacer * 5,//80
+  //0: 0,
+  //1: $spacer * .25,
+  //2: $spacer * .5,
+  //3: $spacer,
+  //4: $spacer * 1.5,
+  //5: $spacer * 3,
+
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -529,9 +569,12 @@ $border-color-translucent: rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius: .375rem !default;
-$border-radius-sm: .25rem !default;
-$border-radius-lg: .5rem !default;
+//$border-radius: .375rem !default;
+$border-radius: 1rem !default;
+//$border-radius-sm: .25rem !default;
+$border-radius-sm: .75rem !default;
+//$border-radius-lg: .5rem !default;
+$border-radius-lg: 1.5rem !default;
 $border-radius-xl: 1rem !default;
 $border-radius-xxl: 2rem !default;
 $border-radius-pill: 50rem !default;
@@ -541,7 +584,8 @@ $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
+//$box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow: 0 0 1rem rgba(#000000, .12) !default;
 $box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset: inset 0 1px 2px rgba($black, .075) !default;
@@ -632,11 +676,13 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
+$h1-font-size: $font-size-base * 3 !default;//48px
+//$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;//32px
+$h3-font-size: $font-size-base * 1.75 !default;//28px
+$h4-font-size: $font-size-base * 1.5 !default;//24px
+$h5-font-size: $font-size-base * 1.125 !default;//18px
+//$h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 // scss-docs-end font-variables
 
@@ -847,7 +893,7 @@ $btn-link-disabled-color: $gray-600 !default;
 $btn-link-focus-shadow-rgb: to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: 1rem; //var(--#{$prefix}border-radius) !default;//custom
+$btn-border-radius: var(--#{$prefix}border-radius) !default;
 $btn-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
 
