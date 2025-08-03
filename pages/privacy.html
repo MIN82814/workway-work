@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/scss/all.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-    <title>隱私權政策-職旅</title>
-  </head>
 
-  <body>
-    <%- include('./layout/navbar-user'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/scss/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <title>隱私權政策-職旅</title>
+</head>
 
-    <main class="bg-gray">
-      <div class="container main-padding">
+<body>
+  <%- include('./layout/navbar-user'); -%>
+
+    <main class="bg-natural-95">
+      <div class="container py-7">
         <div class="row justify-content-center">
           <div class="col-10">
-            <h1 class="fs-2 text-center mb-5">隱私權政策</h1>
-            <div class="d-grid gap-4">
+            <h1 class="fs-2 text-center mb-6">隱私權政策</h1>
+            <div class="d-grid gap-5">
               <p class="fs-5">最後更新日期：2025 年 1 月 1 日</p>
               <p>
                 我們重視你的個人隱私。當你使用職旅
                 WorkWay（以下簡稱「本網站」或「我們」）的服務時，我們會依據本政策保護你的個人資料安全，並尊重你的資訊自主權。
               </p>
               <div>
-                <h2 class="fs-5 mb-2">一、蒐集的資料類型</h2>
+                <h2 class="fs-5 mb-3">一、蒐集的資料類型</h2>
                 <p>
                   當你註冊帳號、填寫職涯計劃、進行諮詢預約或與我們聯繫時，我們可能會蒐集以下資訊：
                 </p>
@@ -43,7 +38,7 @@
                 </ul>
               </div>
               <div>
-                <h2 class="fs-5 mb-2">二、資料使用目的</h2>
+                <h2 class="fs-5 mb-3">二、資料使用目的</h2>
                 <ul>
                   <li>提供你所需的顧問諮詢與職涯支援服務</li>
                   <li>客製化職涯計劃與推薦內容</li>
@@ -52,7 +47,7 @@
                 </ul>
               </div>
               <div>
-                <h2 class="fs-5 mb-2">三、第三方分享</h2>
+                <h2 class="fs-5 mb-3">三、第三方分享</h2>
                 <p>
                   我們不會將你的個人資料出售或任意提供給第三方。僅在以下情況例外：
                 </p>
@@ -63,26 +58,26 @@
                 </ul>
               </div>
               <div>
-                <h2 class="fs-5 mb-2">四、使用者權利</h2>
+                <h2 class="fs-5 mb-3">四、使用者權利</h2>
                 <p>
                   你有權查閱、更正、刪除你的個人資料，亦可向我們請求停止處理或使用。
                 </p>
               </div>
               <div>
-                <h2 class="fs-5 mb-2">五、資料保存與安全</h2>
+                <h2 class="fs-5 mb-3">五、資料保存與安全</h2>
                 <p>
                   我們會採用合理技術與程序，保護你的個人資料安全。除非另有法定或業務必要，我們不會永久保留你的資料。
                 </p>
               </div>
               <div>
-                <h2 class="fs-5 mb-2">六、Cookie 技術</h2>
+                <h2 class="fs-5 mb-3">六、Cookie 技術</h2>
                 <p>
                   我們可能使用 Cookie
                   來記錄用戶偏好與瀏覽行為，用以提升服務體驗。你可以透過瀏覽器設定停用。
                 </p>
               </div>
               <div>
-                <h2 class="fs-5 mb-2">七、政策更新</h2>
+                <h2 class="fs-5 mb-3">七、政策更新</h2>
                 <p>
                   我們保留隨時修改本政策之權利，重大變更將提前公告。<br />如對本政策有任何疑問，請聯繫：privacy@workway.com
                 </p>
@@ -94,20 +89,21 @@
     </main>
 
     <%- include('./layout/footer'); -%>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    <script>
-      // 初始化日期選擇器
-      const fp = flatpickr("#consult_datetime", {
-        dateFormat: "Y-m-d",
-        allowInput: false,
-      });
+      <script>
+        // 初始化日期選擇器
+        const fp = flatpickr("#consult_datetime", {
+          dateFormat: "Y-m-d",
+          allowInput: false,
+        });
 
-      // 讓點擊 icon 也能開啟日期選擇器
-      document.getElementById("calendar_icon").addEventListener("click", () => {
-        fp.open();
-      });
-    </script>
-    <script type="module" src="../main.js"></script>
-  </body>
+        // 讓點擊 icon 也能開啟日期選擇器
+        document.getElementById("calendar_icon").addEventListener("click", () => {
+          fp.open();
+        });
+      </script>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

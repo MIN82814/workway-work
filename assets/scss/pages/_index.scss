@@ -1,3 +1,17 @@
-.index-title {
-  font-size: 100px;
+.workway-img {
+  &::after {
+    content: "";
+    width: 196px;
+    height: 196px;
+    display: block;
+    background-image: url(/assets/images/index/adv-vectors.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin-right: 17.15px;
+    margin-top: -22px;
+
+  }
+
 }
