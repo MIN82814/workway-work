@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/workway-work/assets/main-B7FH2ni6.js"></script>
-    <link rel="stylesheet" crossorigin href="/workway-work/assets/main-Nl7IgCRs.css">
-  </head>
+<html lang="zh-TW">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-3">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/scss/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <title>隱私權政策-職旅</title>
+  <script type="module" crossorigin src="/workway-work/assets/main-IkO-xX3C.js"></script>
+  <link rel="stylesheet" crossorigin href="/workway-work/assets/main-BrWVq5UM.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-3">
   <div class="container">
-    <a class="navbar-brand" href="#"
-      ><img src="/workway-work/assets/logo-DGyMmxSt.svg" alt="logo"
-    /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <a class="navbar-brand" href="../pages/index.html"><img src="/workway-work/assets/logo-DGyMmxSt.svg" alt="logo" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,61 +34,133 @@
         </li>
       </ul>
     </div>
-    <a href="user.html">
-      <img
-        src="/workway-work/assets/avatar-QGHQ479s.png"
-        alt="user大頭照"
-        class="user-img rounded-circle border me-2"
-      />Mokumaru</a
-    >
-  </div>
-</nav>
-
-    <h1 class="fs-3 fs-lg-1">我是首頁</h1>
-
-    <!-- Modal 按鈕 -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      打開 modal
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-dark border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      登入/註冊
     </button>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+          <div class="card shadow">
+            <div class="row g-0">
+
+              <div class="col-md-4">
+                <img src="/workway-work/assets/login-DRI71ClI.png" class="img-fluid rounded-start" alt="登入圖片">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body position-relative">
+                  <button type="button" class="btn-close user-btn-close " data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="text-center ">
+                    <h1 class="card-title my-5 fs-2">登入</h1>
+                    <div>
+                      <button type="button" class="btn btn-outline-secondary border w-100"><img
+                          src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22.56%2012.25C22.56%2011.47%2022.49%2010.72%2022.36%2010H12V14.26H17.92C17.66%2015.63%2016.88%2016.79%2015.71%2017.57V20.34H19.28C21.36%2018.42%2022.56%2015.6%2022.56%2012.25Z'%20fill='%234285F4'/%3e%3cpath%20d='M12%2023.0001C14.97%2023.0001%2017.46%2022.0201%2019.28%2020.3401L15.71%2017.5701C14.73%2018.2301%2013.48%2018.6301%2012%2018.6301C9.13999%2018.6301%206.70999%2016.7001%205.83999%2014.1001H2.17999V16.9401C3.98999%2020.5301%207.69999%2023.0001%2012%2023.0001Z'%20fill='%2334A853'/%3e%3cpath%20d='M5.84%2014.0901C5.62%2013.4301%205.49%2012.7301%205.49%2012.0001C5.49%2011.2701%205.62%2010.5701%205.84%209.91007V7.07007H2.18C1.43%208.55007%201%2010.2201%201%2012.0001C1%2013.7801%201.43%2015.4501%202.18%2016.9301L5.03%2014.7101L5.84%2014.0901Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M12%205.38C13.62%205.38%2015.06%205.94%2016.21%207.02L19.36%203.87C17.45%202.09%2014.97%201%2012%201C7.69999%201%203.98999%203.47%202.17999%207.07L5.83999%209.91C6.70999%207.31%209.13999%205.38%2012%205.38Z'%20fill='%23EA4335'/%3e%3c/svg%3e" alt="google icon" class="me-1">Google</button>
+                    </div>
+                  </div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              關閉
-            </button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+
+
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</nav>    <header class="py-7 text-center">
+      <div class="container">
+        <div class="row  justify-content-center">
+          <div class="col-8 mb-5">
+            <h1 class="display-1 fw-bold">一起陪伴、探索<br>還有你那些未完成的夢</h1>
+          </div>
+          <div class="col-8">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="text-start text-natural-50  ">
+                <h5 class="fw-normal mb-2">自由工作很美，也很難。</h5>
+                <h5 class="fw-normal">我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</h5>
+              </div>
+              <button type="button" class="btn btn-secondary fs-4 fw-bold">開始你的職旅 <span
+                  class="material-icons-outlined align-bottom ms-1">
+                  chevron_right
+                </span></button>
+            </div>
+          </div>
+        </div>
+
+
+
+    </header>
+    <main>
+      <div class="container-fluid pb-7 mb-7">
+        <div class="row">
+          <div class="col-4"><img src="/workway-work/assets/hero-1-7HLL7KFx.png" alt="hero-1"></div>
+          <div class="col-4">
+            <div>
+              <img src="/workway-work/assets/hero-2-DD8Hkiv3.png" alt="hero-2" class="mb-5">
+              <img src="/workway-work/assets/hero-3-wmFQiUUr.png" alt="hero-3">
+            </div>
+          </div>
+          <div class="col-4"><img src="/workway-work/assets/hero-4-3WllqM98.png" alt="hero-4" class="flex-1"></div>
+        </div>
+      </div>
+      <div class="container pb-7 mb-7">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <img src="data:image/svg+xml,%3csvg%20width='96'%20height='84'%20viewBox='0%200%2096%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M74.1289%208.19861C86.2078%208.19861%2095.9999%2017.9986%2096%2030.0873V54.3353L95.998%2054.6371C95.9179%2060.552%2093.491%2065.9027%2089.6133%2069.7933V82.0004H87.0967C86.119%2082.0003%2085.0865%2081.719%2084.167%2081.3842C83.2024%2081.0328%2082.1563%2080.5446%2081.0918%2079.975C79.2139%2078.97%2077.1625%2077.6477%2075.2236%2076.1957C74.9491%2076.2094%2074.673%2076.2187%2074.3955%2076.222L74.1289%2076.224H60C54.8961%2076.2239%2050.2015%2074.4723%2046.4805%2071.5394C47.9663%2070.5009%2049.2118%2069.2986%2050.2256%2068.057C52.9816%2070.0269%2056.3552%2071.1868%2060%2071.1869H74.1289L74.334%2071.1859C74.8114%2071.1801%2075.2852%2071.1546%2075.7539%2071.1097L76.75%2071.014L77.5391%2071.6293C79.5009%2073.1587%2081.6153%2074.5443%2083.4639%2075.5336C83.8555%2075.7432%2084.2296%2075.9309%2084.5811%2076.097V67.5961L85.4102%2066.8461C86.805%2065.5853%2087.9865%2064.0951%2088.8975%2062.4359H66V57.2054H90.7246C90.8718%2056.3467%2090.9547%2055.4658%2090.9668%2054.5677L90.9678%2054.3353V50.4261H71.8066V45.1967H90.9678V38.4164H77.0332V33.1869H90.9678V30.0873C90.9677%2020.7801%2083.4286%2013.2347%2074.1289%2013.2347H60C59.8871%2013.2347%2059.7745%2013.2364%2059.6621%2013.2386C59.1363%2011.5113%2058.4152%209.86934%2057.5244%208.33826C58.337%208.24662%2059.163%208.19862%2060%208.19861H74.1289Z'%20fill='%23141A1F'/%3e%3cpath%20d='M36.5801%202C46.2723%202%2054.3644%208.85589%2056.2793%2017.9863C59.0886%2027.4206%2062.3061%2044.2399%2062.3223%2044.3242H52.4512V49.5547H43.1611C43.1612%2052.7508%2046.3763%2057.1387%2050.6143%2057.1387C50.6143%2060.6253%2045.7158%2069.6024%2035.0322%2069.6025H20.1289C9.01212%2069.6025%200.000168115%2060.5838%200%2049.458V22.1455C0%2011.0196%209.01202%202%2020.1289%202H36.5801ZM42.9668%2024.4697C40.8291%2024.4699%2039.0967%2026.2043%2039.0967%2028.3438C39.0967%2030.4832%2040.8291%2032.2176%2042.9668%2032.2178C45.1047%2032.2178%2046.8379%2030.4834%2046.8379%2028.3438C46.8378%2026.2042%2045.1046%2024.4697%2042.9668%2024.4697Z'%20fill='%234A69E8'/%3e%3c/svg%3e" alt="logo" class="mb-5">
+            <h2 class="mb-5">他們已經踏上職旅<br>聽聽他們的故事</h2>
+            <p>每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
+          </div>
+          <div class="col-8">
+            <div class="card shadow" style="width: 18rem;">
+              <img src="/workway-work/assets/story-cover-1-Bn7anPV1.png" class="card-img-top" alt="轉型成功的設計師">
+              <div class="card-body ">
+                <h2 class="fs-4 fw-bold mb-4">轉型成功的設計師</h2>
+                <p class="card-text mb-4">
+                  從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+                <div class="d-flex align-items-center">
+                  <h3 class="fs-6 fw-bold pe-2">視覺設計師</h3>
+                  <p class="border-start ps-2 fs-14">郭敏迪 (34y)</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container position-relative">
+
+        <h2 class="text-center fs-1 fw-bold mb-6">選擇職旅 WorkWay</h2>
+
+        <div class="workway-img">
+          <div class="row">
+            <div class="col-4">
+              <img src="/workway-work/assets/adv-1-DgRhnpWQ.png" alt="實戰經驗" class="rounded">
+            </div>
+            <div class="col-4">
+              <img src="/workway-work/assets/adv-1-DgRhnpWQ.png" alt="實戰經驗" class="rounded">
+            </div>
+            <div class="col-4">
+              <img src="/workway-work/assets/adv-1-DgRhnpWQ.png" alt="實戰經驗" class="rounded">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      </div>
+
+
+    </main>
+
 
     <div
   class="w-100 rounded-pill"
@@ -136,7 +203,7 @@
       </div>
     </nav>
   </div>
-</footer>
-
-  </body>
+</footer>
+</body>
+
 </html>
