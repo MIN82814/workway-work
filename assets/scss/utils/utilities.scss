@@ -10,3 +10,50 @@ $utilities: map-merge(
       ),
   )
 );
+
+$font-sizes: (
+  14: 0.875rem,
+  20: 1.25rem,
+);
+
+
+.fs-14 {
+     font-size: map-get($font-sizes, 14);
+}
+.fs-20 {
+     font-size: map-get($font-sizes, 20);
+}
+
+//按鈕圓角
+.btn-radius {
+  border-radius: 12px;
+
+  @include media-breakpoint-up(lg) {
+    border-radius: 16px; 
+  }
+}
+
+
+//tab圓角
+.nav-pills .nav-link {
+  border-radius: 12px;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-pills .nav-link {
+    border-radius: 16px;
+  }
+}
+
+.mb-user-smtitle{
+  margin-bottom: 16.5px;
+}
+
+
+@include media-breakpoint-up(lg) {
+  .mb-user-smtitle {
+     margin-bottom: 0;
+  }
+}
+
+
