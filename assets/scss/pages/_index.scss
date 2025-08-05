@@ -1,17 +1,29 @@
-.workway-img {
-  &::after {
-    content: "";
-    width: 196px;
-    height: 196px;
-    display: block;
-    background-image: url(/assets/images/index/adv-vectors.svg);
-    background-repeat: no-repeat;
-    right: 0;
-    top: 0;
-    position: absolute;
-    margin-right: 17.15px;
-    margin-top: -22px;
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #141a1f80;
+  inset: 0;
+}
 
-  }
 
+.work-hover:hover .overlay {
+  opacity: 1;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.work-hover-tag {
+  border-top-right-radius: 12px;
+}
+
+.workway-vectors {
+  top: -68px;
+  right: 2.5px;
+}
+
+.workway-line {
+  border-bottom: 1px solid $natural-85;
 }
