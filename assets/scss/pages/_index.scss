@@ -1,3 +1,13 @@
+.story-logo {
+  width: 48px;
+  height: 42px;
+
+  @include media-breakpoint-up(lg) {
+    width: 96px;
+    height: 84px;
+  }
+}
+
 .overlay {
   position: absolute;
   opacity: 0;
@@ -17,13 +27,10 @@
 
 .work-hover-tag {
   border-top-right-radius: 12px;
+
 }
 
 .workway-vectors {
   top: -68px;
   right: 2.5px;
-}
-
-.workway-line {
-  border-bottom: 1px solid $natural-85;
 }

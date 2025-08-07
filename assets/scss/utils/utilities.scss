@@ -1,15 +1,8 @@
-$utilities: map-merge(
-  $utilities,
-  (
-    "font-size":
-      map-merge(
-        map-get($utilities, "font-size"),
-        (
-          responsive: true,
-        )
-      ),
-  )
-);
+$utilities: map-merge($utilities,
+    ("font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true,
+        )),
+    ));
 
 $font-sizes: (
   14: 0.875rem,
@@ -18,23 +11,24 @@ $font-sizes: (
 
 
 .fs-14 {
-     font-size: map-get($font-sizes, 14);
-}
-.fs-20 {
-     font-size: map-get($font-sizes, 20);
+  font-size: map-get($font-sizes, 14);
 }
 
-//按鈕圓角
+.fs-20 {
+  font-size: map-get($font-sizes, 20);
+}
+
+/*按鈕圓角*/
 .btn-radius {
   border-radius: 12px;
 
   @include media-breakpoint-up(lg) {
-    border-radius: 16px; 
+    border-radius: 16px;
   }
 }
 
 
-//tab圓角
+/*tab圓角*/
 .nav-pills .nav-link {
   border-radius: 12px;
 }
@@ -45,15 +39,21 @@ $font-sizes: (
   }
 }
 
-.mb-user-smtitle{
+/*表單雙欄標題*/
+.mb-user-smtitle {
   margin-bottom: 16.5px;
 }
 
-
 @include media-breakpoint-up(lg) {
   .mb-user-smtitle {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
+.bg-gray-linear {
+  background: linear-gradient(to top, #f0f3f5 25%, transparent 25%);
+}
 
+.object-fit-cover {
+  object-fit: cover
+}
