@@ -1,0 +1,10 @@
+/*表單雙欄標題*/
+.mb-user-smtitle {
+    margin-bottom: 16.5px;
+}
+
+@include media-breakpoint-up(lg) {
+    .mb-user-smtitle {
+        margin-bottom: 0;
+    }
+}

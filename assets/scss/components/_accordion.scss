@@ -1,0 +1,17 @@
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    /* 展開時背景透明 */
+    color: inherit;
+    /* 保持原本文字顏色 */
+    box-shadow: none;
+    /* 移除藍色陰影 */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* 移除點擊後的外框陰影 */
+}
+
+.border-top-dashed {
+    border-top: 1px dashed $natural-85 ;
+}

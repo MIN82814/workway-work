@@ -1,13 +1,8 @@
-$utilities: map-merge($utilities, (
-  "font-size": map-merge(map-get($utilities, "font-size"), (
-    responsive: true,
-    values: map-merge(map-get(map-get($utilities, "font-size"), "values"), (
-      14: 0.875rem,
-      20: 1.25rem,
-      80: 5rem,
-    ))
-  ))
-));
+$utilities: map-merge($utilities, ("font-size": map-merge(map-get($utilities, "font-size"), (responsive: true,
+          values: map-merge(map-get(map-get($utilities, "font-size"), "values"), (14: 0.875rem,
+              20: 1.25rem,
+              80: 5rem,
+            ))))));
 
 .fs-14 {
   font-size: map-get($font-sizes, 14);
@@ -16,8 +11,9 @@ $utilities: map-merge($utilities, (
 .fs-20 {
   font-size: map-get($font-sizes, 20);
 }
-.fs-80{
-   font-size: map-get($font-sizes, 80);
+
+.fs-80 {
+  font-size: map-get($font-sizes, 80);
 }
 
 
@@ -42,16 +38,6 @@ $utilities: map-merge($utilities, (
   }
 }
 
-/*表單雙欄標題*/
-.mb-user-smtitle {
-  margin-bottom: 16.5px;
-}
-
-@include media-breakpoint-up(lg) {
-  .mb-user-smtitle {
-    margin-bottom: 0;
-  }
-}
 
 .bg-gray-linear {
   background: linear-gradient(to top, #f0f3f5 25%, transparent 25%);

@@ -8,6 +8,29 @@
   }
 }
 
+.bg-ball {
+  background-image: url(../assets/images/index/gradient-ball.png);
+  background-size: 560px;
+  background-repeat: no-repeat;
+
+
+  @include media-breakpoint-up(lg) {
+    background-size: 800px;
+  }
+}
+
+.bg-ball-center {
+  background-position: center 40px;
+}
+
+.bg-ball-right {
+  background-position: calc(100% + 180px) 80px;
+
+  @include media-breakpoint-up(lg) {
+    background-position: calc(100% + 172px) 208px;
+  }
+}
+
 .overlay {
   position: absolute;
   opacity: 0;
@@ -31,6 +54,6 @@
 }
 
 .workway-vectors {
-  top: -68px;
+  top: 0px;
   right: 2.5px;
 }
