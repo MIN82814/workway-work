@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="../assets/scss/all.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
   <title>-職旅</title>
-  <script type="module" crossorigin src="/workway-work/assets/main-ByosKHMj.js"></script>
-  <link rel="stylesheet" crossorigin href="/workway-work/assets/main-CWiT_2GE.css">
+  <script type="module" crossorigin src="/workway-work/assets/main-C-_GEWLn.js"></script>
+  <link rel="stylesheet" crossorigin href="/workway-work/assets/main-CYrEPatw.css">
 </head>
 
 <body>
@@ -77,8 +79,9 @@
   </div>
   </div>
   </div>
-</nav>    <header class="pt-lg-7 pt-6 text-center">
-      <div class="container" style="background-image: url(/workway-work/assets/gradient-ball-DJ-PbHbR.png); background-position:  center 40px; background-size: cover; background-repeat: no-repeat;">
+</nav>
+    <header class="pt-lg-7 pt-6 text-center bg-ball bg-ball-center">
+      <div class="container">
         <div class="row  justify-content-center">
           <div class="col-lg-8 mb-lg-5 mb-4">
             <h1 class="fs-lg-80 fs-2 fw-bold">一起陪伴、探索<br>還有你那些未完成的夢</h1>
@@ -89,15 +92,16 @@
                 <h5 class="mb-lg-2 mb-0">自由工作很美，也很難。</h5>
                 <h5>我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</h5>
               </div>
-              <button type="button" class="btn btn-secondary fs-lg-4 fs-20 fw-bold  align-middle">開始你的職旅<span
-                  class="material-symbols-outlined align-bottom ms-1 align-bottom ms-lg-1" style="width: 28px; height: 28px;">
+              <button type="button"
+                class="btn btn-secondary fs-lg-4 fs-20 fw-bold  d-flex  align-items-center">開始你的職旅<span
+                  class="material-symbols-outlined align-middle ms-1 fs-3" style="line-height: 1;">
                   chevron_right
                 </span></button>
             </div>
           </div>
         </div>
 
-
+      </div>
 
     </header>
     <main>
@@ -119,33 +123,134 @@
       <div class="bg-gray-linear">
         <div class="container pb-lg-7 pb-6">
           <div class="row align-items-center flex-column flex-lg-row">
-            <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="col-lg-4 mb-5 mb-lg-0 ">
               <img src="data:image/svg+xml,%3csvg%20width='96'%20height='84'%20viewBox='0%200%2096%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M74.1289%208.19861C86.2078%208.19861%2095.9999%2017.9986%2096%2030.0873V54.3353L95.998%2054.6371C95.9179%2060.552%2093.491%2065.9027%2089.6133%2069.7933V82.0004H87.0967C86.119%2082.0003%2085.0865%2081.719%2084.167%2081.3842C83.2024%2081.0328%2082.1563%2080.5446%2081.0918%2079.975C79.2139%2078.97%2077.1625%2077.6477%2075.2236%2076.1957C74.9491%2076.2094%2074.673%2076.2187%2074.3955%2076.222L74.1289%2076.224H60C54.8961%2076.2239%2050.2015%2074.4723%2046.4805%2071.5394C47.9663%2070.5009%2049.2118%2069.2986%2050.2256%2068.057C52.9816%2070.0269%2056.3552%2071.1868%2060%2071.1869H74.1289L74.334%2071.1859C74.8114%2071.1801%2075.2852%2071.1546%2075.7539%2071.1097L76.75%2071.014L77.5391%2071.6293C79.5009%2073.1587%2081.6153%2074.5443%2083.4639%2075.5336C83.8555%2075.7432%2084.2296%2075.9309%2084.5811%2076.097V67.5961L85.4102%2066.8461C86.805%2065.5853%2087.9865%2064.0951%2088.8975%2062.4359H66V57.2054H90.7246C90.8718%2056.3467%2090.9547%2055.4658%2090.9668%2054.5677L90.9678%2054.3353V50.4261H71.8066V45.1967H90.9678V38.4164H77.0332V33.1869H90.9678V30.0873C90.9677%2020.7801%2083.4286%2013.2347%2074.1289%2013.2347H60C59.8871%2013.2347%2059.7745%2013.2364%2059.6621%2013.2386C59.1363%2011.5113%2058.4152%209.86934%2057.5244%208.33826C58.337%208.24662%2059.163%208.19862%2060%208.19861H74.1289Z'%20fill='%23141A1F'/%3e%3cpath%20d='M36.5801%202C46.2723%202%2054.3644%208.85589%2056.2793%2017.9863C59.0886%2027.4206%2062.3061%2044.2399%2062.3223%2044.3242H52.4512V49.5547H43.1611C43.1612%2052.7508%2046.3763%2057.1387%2050.6143%2057.1387C50.6143%2060.6253%2045.7158%2069.6024%2035.0322%2069.6025H20.1289C9.01212%2069.6025%200.000168115%2060.5838%200%2049.458V22.1455C0%2011.0196%209.01202%202%2020.1289%202H36.5801ZM42.9668%2024.4697C40.8291%2024.4699%2039.0967%2026.2043%2039.0967%2028.3438C39.0967%2030.4832%2040.8291%2032.2176%2042.9668%2032.2178C45.1047%2032.2178%2046.8379%2030.4834%2046.8379%2028.3438C46.8378%2026.2042%2045.1046%2024.4697%2042.9668%2024.4697Z'%20fill='%234A69E8'/%3e%3c/svg%3e" alt="logo" class="mb-lg-5 mb-4 story-logo">
               <h2 class="mb-lg-5 mb-4 fs-2 fs-lg-1 fw-bold">他們已經踏上職旅<br>聽聽他們的故事</h2>
               <p class="fs-lg-5 text-natural-50">每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
             </div>
-            <div class="col-8">
-              <div class="card shadow" style="width: 18rem;">
-                <img src="/workway-work/assets/story-cover-1-Bn7anPV1.png" class="card-img-top" alt="轉型成功的設計師">
-                <div class="card-body ">
-                  <h2 class="fs-lg-4 fs-20 fw-bold mb-4">轉型成功的設計師</h2>
-                  <p class="card-text mb-4">
-                    從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
-                  <div class="d-flex align-items-center">
-                    <h3 class="fs-lg-6 fs-14 fw-bold pe-2">視覺設計師</h3>
-                    <p class="border-start ps-2 fs-14">郭敏迪 (34y)</p>
+            <div class="col-lg-8 myswiper">
+              <div class="swiper mySwiper mb-3 px-3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide overflow-hidden shadow rounded-4 d-flex flex-column">
+
+                    <div class="horn">
+                      <span class="bg-primary text-white rounded-4 position-absolute py-2 px-4 m-3 fs-14 fs-lg-6">數位遊牧 2
+                        年</span><img src="/workway-work/assets/story-cover-1-Bn7anPV1.png" class="mb-3" alt="郭敏迪">
+                    </div>
+                    <div class=" px-4 pt-4 pb-5 d-flex flex-column flex-grow-1">
+                      <h3 class="fs-lg-4 fs-20 fw-bold mb-4">轉型成功的設計師</h3>
+                      <p class="mb-4 text-natural-50">
+                        從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+                      <div class="d-flex mt-auto align-items-center">
+                        <h4 class="fw-bold pe-2 fs-lg-6 fs-14">視覺設計師</h4>
+                        <p class="border-start ps-2 fs-14">郭敏迪 (34y)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide overflow-hidden shadow rounded-4  d-flex flex-column">
+                    <div class="horn"> <span
+                        class="bg-primary text-white rounded-4 position-absolute py-2 px-4 m-3 fs-14 fs-lg-6">數位遊牧 2
+                        年</span>
+                      <img src="/workway-work/assets/story-cover-2-CWUZyQXo.png" class="mb-3" alt="張世明">
+                    </div>
+                    <div class=" px-4 pt-4 pb-5  d-flex flex-column flex-grow-1">
+                      <h3 class="fs-lg-4 fs-20 fw-bold mb-4">數位遊牧生活實踐者</h3>
+                      <p class="mb-4 text-natural-50">
+                        兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多 20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。</p>
+                      <div class="d-flex mt-auto align-items-center">
+                        <h4 class="fw-bold pe-2 fs-lg-6 fs-14">內容策略師</h4>
+                        <p class="border-start ps-2 fs-14">林雨潔 (29y)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide overflow-hidden shadow rounded-4  d-flex flex-column">
+                    <div class="horn">
+                      <span class="bg-primary text-white rounded-4 position-absolute py-2 px-4 m-3 fs-14 fs-lg-6">數位遊牧 3
+                        年</span>
+                      <img src="/workway-work/assets/story-cover-3-BUqkWZaw.png" class="mb-3" alt="張世明">
+                    </div>
+                    <div class=" px-4 pt-4 pb-5  d-flex flex-column flex-grow-1">
+                      <h3 class="fs-lg-4 fs-20 fw-bold mb-4">中年轉型的工程師</h3>
+                      <p class="mb-4 text-natural-50">
+                        59歲被裁員時，我以為職涯結束了。職旅顧問不只幫我轉職，更讓我相信自己還有價值。現在我每月穩定接案、收入翻倍。年齡不是限制，只是我還沒找到對的方向。</p>
+                      <div class="d-flex mt-auto align-items-center">
+                        <h4 class="fw-bold pe-2 fs-lg-6 fs-14">系統架構顧問</h4>
+                        <p class="border-start ps-2 fs-14">張世明 (62y)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide overflow-hidden shadow rounded-4 d-flex flex-column">
+                    <div class="horn">
+                      <span class="bg-primary text-white rounded-4 position-absolute py-2 px-4 m-3 fs-14 fs-lg-6">數位遊牧 2
+                        年</span>
+                      <img src="/workway-work/assets/story-cover-4-DDRMNC6y.png" class="mb-3" alt="郭敏迪">
+                    </div>
+                    <div class=" px-4 pt-4 pb-5 d-flex flex-column flex-grow-1">
+                      <h3 class="fs-lg-4 fs-20 fw-bold mb-4">轉型成功的設計師</h3>
+                      <p class="mb-4 text-natural-50">
+                        從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+                      <div class="d-flex mt-auto align-items-center">
+                        <h4 class="fw-bold pe-2 fs-lg-6 fs-14">視覺設計師</h4>
+                        <p class="border-start ps-2 fs-14">郭敏迪 (34y)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide overflow-hidden shadow rounded-4 d-flex flex-column">
+                    <div class="horn"> <span
+                        class="bg-primary text-white rounded-4 position-absolute py-2 px-4 m-3 fs-14 fs-lg-6">數位遊牧 2
+                        年</span>
+                      <img src="/workway-work/assets/story-cover-5-BO9rNF91.png" class="mb-3" alt="郭敏迪">
+                    </div>
+                    <div class=" px-4 pt-4 pb-5 d-flex flex-column flex-grow-1">
+                      <h3 class="fs-lg-4 fs-20 fw-bold mb-4">轉型成功的設計師</h3>
+                      <p class="mb-4 text-natural-50">
+                        從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+                      <div class="d-flex mt-auto align-items-center">
+                        <h4 class="fw-bold pe-2 fs-lg-6 fs-14">視覺設計師</h4>
+                        <p class="border-start ps-2 fs-14">郭敏迪 (34y)</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class=" bg-natural-95 ">
+      <!--選擇職旅 WorkWay-->
+      <div class=" bg-natural-95 mb-lg-7 mb-6">
         <div class="container py-lg-7 py-6">
           <div class=" position-relative mb-lg-6 mb-5">
-            <h2 class="text-center fs-1 fw-bold mb-lg-6 mb-5">選擇職旅 WorkWay</h2>
+            <div class=" d-flex justify-content-center mb-1">
+              <div class="d-inline-block text-primary position-relative" style="width: 120px; height: 64px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="64" viewBox="0 0 120 64" role="img"
+                  aria-label="為什麼？">
+                  <path d="
+      M12 6
+      H108
+      a8 10 0 0 1 8 10 
+      V42
+      a8 10 0 0 1 -8 10 
+      H66  
+      L60 60
+    L54 52 
+      H12
+      a8 10 0 0 1 -8 -10 
+      V16
+      a8 10 0 0 1 8 -10 
+      Z
+    " fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                </svg>
+
+                <div class="position-absolute top-40 start-50 translate-middle text-center w-75 fw-bold"
+                  style="pointer-events:none; user-select:none; top: 45%; transform: translate(-50%, -50%); font-size: 20px;">
+                  為什麼？
+                </div>
+              </div>
+            </div>
+
+            <h2 class="text-center fs-2 fs-lg-1 fw-bold mb-lg-6 mb-5">選擇職旅 WorkWay</h2>
 
             <div class="position-absolute workway-vectors d-none d-lg-block">
               <img src="/workway-work/assets/adv-vectors-BMq1niqI.svg" alt="adv-3">
@@ -213,7 +318,183 @@
       </div>
       </div>
       </div>
+      <!--遇見你的職涯夥伴-->
+      <div class=" bg-ball bg-ball-right pb-lg-7 pb-6">
+        <div class="container ">
+          <div class="row flex-column flex-lg-row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="/workway-work/assets/team-BOJZrPVG.png" alt="team" class="rounded-2">
+            </div>
+            <div class="col-lg-6">
+              <div class="px-3 text-center text-lg-start ">
+                <h2 class="fs-2 mb-4 mb-lg-4 fw-bold">遇見你的職涯夥伴</h2>
+                <p class="text-natural-50 mb-4 mb-lg-4 fs-lg-5 text-start">每位顧問都有獨特專長，更重要的是：</p>
+                <h3 class="fs-20 fs-lg-4 fw-bold text-primary bg-natural-95 p-2 mb-4 mb-lg-4 d-inline-block">
+                  “
+                  他們都曾面對你正在經歷的挑戰 ”</h3>
+                <p class="text-natural-50 mb-4 mb-lg-4 fs-lg-5 text-start">職旅 WorkWay
+                  匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。我們的顧問不只教授理論，更分享親身經歷的挑戰與解決之道。</p>
+                <p class="text-natural-50 mb-4 mb-lg-4 fs-lg-5 text-start">我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。</p>
+              </div>
+              <div class="text-center text-lg-start">
+                <button type="button"
+                  class="btn btn-dark rounded-2 d-flex  align-items-center mx-auto mx-lg-0">了解更多職旅夥伴<span
+                    class="material-symbols-outlined align-middle ms-1 fs-20">
+                    chevron_right
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--服務流程-->
+      <div class="bg-primary">
+        <div class="container py-lg-7 py-6">
+          <h2 class="fs-2 fs-lg-1 text-white text-center mb-4 mb-lg-5 fw-bold">服務流程</h2>
+          <p class="fs-6 fs-lg-5 text-white mb-5 mb-lg-6 text-center">簡單四步，踏上你的職旅</p>
+          <div class="swiper serveSwiper ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card overflow-hidden position-relative">
+                  <span class="bg-natural-95 text-primary position-absolute top-0 start-0 py-2 px-4 fw-bold fs-14"
+                    style="border-bottom-right-radius:12px">
+                    STEP <span class="ms-1 fs-lg-5 fs-6">1</span></span>
+                  <img src="/workway-work/assets/serve-1-DESZPf4_.svg" class="card-img-top" alt="免費註冊會員"
+                    style="padding:64px 73px 16px;">
+                  <div class="card-body text-center py-0 px-5">
+                    <h5 class="card-title mb-4 mb-lg-5 fs-20 fs-lg-4 fw-bold">免費註冊會員</h5>
+                    <p class="card-text mb-6 text-natural-50">透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card overflow-hidden position-relative">
+                  <span class="bg-natural-95 text-primary position-absolute top-0 start-0 py-2 px-4 fw-bold fs-14"
+                    style="border-bottom-right-radius:12px">
+                    STEP <span class="ms-1 fs-lg-5 fs-6">1</span></span>
+                  <img src="/workway-work/assets/serve-1-DESZPf4_.svg" class="card-img-top" alt="免費註冊會員"
+                    style="padding:64px 73px 16px;">
+                  <div class="card-body text-center py-0 px-5">
+                    <h5 class="card-title mb-4 mb-lg-5 fs-20 fs-lg-4 fw-bold">免費註冊會員</h5>
+                    <p class="card-text mb-6 text-natural-50">透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card overflow-hidden position-relative">
+                  <span class="bg-natural-95 text-primary position-absolute top-0 start-0 py-2 px-4 fw-bold fs-14"
+                    style="border-bottom-right-radius:12px">
+                    STEP <span class="ms-1 fs-lg-5 fs-6">1</span></span>
+                  <img src="/workway-work/assets/serve-1-DESZPf4_.svg" class="card-img-top" alt="免費註冊會員"
+                    style="padding:64px 73px 16px;">
+                  <div class="card-body text-center py-0 px-5">
+                    <h5 class="card-title mb-4 mb-lg-5 fs-20 fs-lg-4 fw-bold">免費註冊會員</h5>
+                    <p class="card-text mb-6 text-natural-50">透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card overflow-hidden position-relative">
+                  <span class="bg-natural-95 text-primary position-absolute top-0 start-0 py-2 px-4 fw-bold fs-14"
+                    style="border-bottom-right-radius:12px">
+                    STEP <span class="ms-1 fs-lg-5 fs-6">1</span></span>
+                  <img src="/workway-work/assets/serve-1-DESZPf4_.svg" class="card-img-top" alt="免費註冊會員"
+                    style="padding:64px 73px 16px;">
+                  <div class="card-body text-center py-0 px-5">
+                    <h5 class="card-title mb-4 mb-lg-5 fs-20 fs-lg-4 fw-bold">免費註冊會員</h5>
+                    <p class="card-text mb-6 text-natural-50">透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。</p>
+                  </div>
+                </div>
+              </div>
 
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <!--你可能有些困惑-->
+      <div style="background-image: url(data:image/png;base64,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); background-repeat:repeat; ">
+        <div class="container py-lg-7 py-6">
+          <div class=" d-flex justify-content-center mb-1">
+            <div class="d-inline-block text-primary position-relative" style="width: 120px; height: 64px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="64" viewBox="0 0 120 64" role="img"
+                aria-label="\ Q&A /">
+                <path d="
+      M12 6
+      H108
+      a8 10 0 0 1 8 10 
+      V42
+      a8 10 0 0 1 -8 10 
+      H66  
+      L60 60
+    L54 52 
+      H12
+      a8 10 0 0 1 -8 -10 
+      V16
+      a8 10 0 0 1 8 -10 
+      Z
+    " fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+
+              <div class="position-absolute top-40 start-50 translate-middle text-center w-75 fw-bold"
+                style="pointer-events:none; user-select:none; top: 45%; transform: translate(-50%, -50%); font-size: 20px;">
+                \ Q&A /
+              </div>
+            </div>
+          </div>
+
+          <h2 class="text-center fs-2 fs-lg-1 fw-bold mb-lg-6 mb-5">你可能有些困惑...</h2>
+          <div class="row">
+            <div class="col-5 d-flex justify-content-star  d-none d-lg-block">
+              <img src="/workway-work/assets/qa-C7z7FipQ.svg" alt="你可能有些困惑">
+            </div>
+            <div class="col-lg-7">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button collapsed fs-lg-5 fs-6 fw-bold text-natural-50 d-flex align-items-lg-center align-items-start"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <span class="me-2 fs-lg-20 fs-5 lh-1">Q.</span>
+                      <p>一對一諮詢是怎麼進行的？需要準備什麼嗎？</p>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body border-top-dashed d-flex ">
+                      <p class="fs-5 fs-lg-20 text-primary fw-bold me-2 lh-1">A.</p>
+                      <p class="fs-14">諮詢通常採 Google Meet 或 Zoom，時長約 30
+                        分鐘。我們建議你在預約前先簡單整理目前的狀態、遇到的困難、或想達成的目標。如果你不確定，顧問也會從對話中引導你探索，無需擔心準備不夠。</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--聯絡方式-->
+      <div class="container py-10">
+        <div class="bg-primary rounded-4 py-lg-5 py-4 px-lg-6 px-5">
+          <div class="border-bottom-white mb-lg-5 mb-4">
+            <img src="data:image/svg+xml,%3csvg%20width='40'%20height='36'%20viewBox='0%200%2040%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.8877%202.60303C35.9206%202.60303%2040.0009%206.71915%2040.001%2011.7964V21.981L40%2022.1069C39.9667%2024.5913%2038.9556%2026.839%2037.3398%2028.4731V33.6001H36.291C35.8837%2033.6%2035.4534%2033.482%2035.0703%2033.3413C34.6684%2033.1937%2034.2326%2032.9888%2033.7891%2032.7495C33.0066%2032.3274%2032.1516%2031.7724%2031.3438%2031.1626C31.2295%2031.1683%2031.1145%2031.1719%2030.999%2031.1733H25.001C22.8735%2031.1733%2020.9179%2030.4362%2019.3672%2029.2036C19.986%2028.7674%2020.5056%2028.2641%2020.9277%2027.7427C22.0762%2028.5704%2023.4819%2029.0581%2025.001%2029.0581H30.9736C31.1723%2029.0557%2031.3694%2029.0447%2031.5645%2029.0259L31.9795%2028.9858L32.3086%2029.2446C33.126%2029.8869%2034.0071%2030.4688%2034.7773%2030.8843C34.9405%2030.9723%2035.0967%2031.0508%2035.2432%2031.1206V27.5503L35.5889%2027.2349C36.1697%2026.7056%2036.6607%2026.0797%2037.04%2025.3833H27.501V23.187H37.8018C37.8632%2022.8258%2037.8983%2022.4553%2037.9033%2022.0776L37.9043%2021.981V20.3384H29.9199V18.1421H37.9043V15.2954H32.0967V13.0991H37.9043V11.7964C37.9042%207.88738%2034.7626%204.71826%2030.8877%204.71826H25.001C24.9537%204.71826%2024.9064%204.72025%2024.8594%204.72119C24.6403%203.99556%2024.338%203.30677%2023.9668%202.66357C24.3063%202.62489%2024.6513%202.60303%2025.001%202.60303H30.8877Z'%20fill='%23FCFCFD'/%3e%3cpath%20d='M15.2422%200C19.2806%200.000117114%2022.6524%202.88007%2023.4502%206.71484C24.6213%2010.6795%2025.9625%2017.7485%2025.9678%2017.7764H21.8545V19.9727H17.9844C17.9844%2021.315%2019.324%2023.1582%2021.0898%2023.1582C21.0898%2024.6226%2019.0483%2028.3936%2014.5967%2028.3936H8.38672C3.75485%2028.3934%200.00013738%2024.6053%200%2019.9326V8.46094C7.60327e-05%203.78818%203.75481%200.000176942%208.38672%200H15.2422ZM17.9033%209.43652C17.0127%209.43652%2016.2903%2010.165%2016.29%2011.0635C16.29%2011.9621%2017.0125%2012.6914%2017.9033%2012.6914C18.7941%2012.6913%2019.5166%2011.9621%2019.5166%2011.0635C19.5164%2010.1651%2018.7939%209.43658%2017.9033%209.43652Z'%20fill='%23FCFCFD'/%3e%3c/svg%3e" alt="logo" class="mb-5">
+            <h3 class="fs-3 fs-lg-2 text-white fw-bold mb-3">邁向你真正想過的生活，從這裡開始</h3>
+            <p class="fs-6 fs-lg-5 text-white mb-4">第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式</p>
+          </div>
+          <div class="d-flex flex-lg-row flex-column align-items-start ">
+            <div class="d-flex flex-lg-row flex-column text-white">
+              <p class="me-lg-5 mb-4 mb-lg-0 fs-lg-20 fs-5 fw-medium">0800-123-123</p>
+              <p class="fs-lg-20 fs-5 fw-medium mb-5 mb-lg-0">Sample@mail.com</p>
+            </div>
+            <button type="button" class="btn btn-dark fs-14 fs-lg-16 ms-0 ms-lg-auto w-auto">預約免費職涯探索</button>
+          </div>
+        </div>
+      </div>
 
     </main>
 
@@ -278,6 +559,38 @@
     </div>
   </div>
 </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        const swiper1 = new Swiper(".mySwiper", {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          breakpoints: {
+            480: {
+              slidesPerView: 2.8,
+              spaceBetween: 24
+            },
+          },
+        });</script>
+      <script>
+        const swiper2 = new Swiper(".serveSwiper", {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          breakpoints: {
+            480: {
+              slidesPerView: 4,
+              spaceBetween: 24
+            },
+          },
+          autoplay: {
+            delay: 3000, // 每張間隔時間 (毫秒)
+            disableOnInteraction: false, // 使用者操作後是否停止 (false = 不停止)
+          },
+          loop: true
+        });
+      </script>
+
+
+
 </body>
 
 </html>
