@@ -11,7 +11,46 @@
     box-shadow: none;
     /* 移除點擊後的外框陰影 */
 }
-
+.accordion-button {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.accordion-button:not(.collapsed) {
+  padding-bottom: 16px;
+}
 .border-top-dashed {
     border-top: 1px dashed $natural-85 ;
+}
+.accordion-item {
+  border: 1px solid $natural-85; 
+  border-radius: 12px;
+   transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    background-color: $white;
+}
+
+.accordion-button {
+  border-radius: 12px;
+}
+
+.accordion-item + .accordion-item {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.accordion-item + .accordion-item .accordion-button {
+  border-top: 1px solid $natural-85;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button .material-symbols-outlined {
+  transition: transform 0.3s ease;
+  color: $black;
+}
+
+.accordion-button:not(.collapsed) .material-symbols-outlined {
+  transform: rotate(-90deg); 
+  color: $primary;
 }

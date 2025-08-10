@@ -43,6 +43,11 @@ $utilities: map-merge($utilities, ("font-size": map-merge(map-get($utilities, "f
   background: linear-gradient(to top, #f0f3f5 25%, transparent 25%);
 }
 
-.object-fit-cover {
-  object-fit: cover
+.rounded-12 {
+  border-radius: 12px;
 }
+
+@include media-breakpoint-up(lg) {
+.rounded-lg-16 {
+  border-radius: 16px;
+}}

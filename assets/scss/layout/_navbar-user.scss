@@ -3,3 +3,36 @@
     top: 24px;
     right: 24px;
 }
+
+
+
+@media (min-width: 992px) {
+
+  .custom-modal-size {
+    max-width: 1200px;
+    width: 1200px;
+  }
+  
+  .custom-image-width {
+    width: 700px;
+    flex-shrink: 0; /* 防止被壓縮 */
+  }
+  
+  .custom-form-width {
+    width: 500px;
+    flex-shrink: 0; /* 防止被壓縮 */
+  }
+  
+  .custom-modal-size .modal-content {
+    height: 720px;
+  }
+
+}
+
+
+
+
+
+
+
+
