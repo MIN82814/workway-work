@@ -1,7 +1,4 @@
 .myswiper {
-    margin-right: calc(-50vw + 50%); // 滿版延伸效果
-
-
     .swiper {
         overflow: visible;
         overflow-x: clip;
@@ -11,6 +8,11 @@
         background-color: $white;
         height: auto;
         border-radius: 1rem;
+        width: 320px;
+
+        @include media-breakpoint-up(lg) {
+            width: 400px;
+        }
     }
 
     .swiper-slide img {
@@ -27,11 +29,9 @@
 
 .custom-container {
 
-    margin-left: auto;
-
     @include media-breakpoint-up(lg) {
         margin-left: auto;
-        width: 1320px;
+        max-width: 1608px;
     }
 }
 
