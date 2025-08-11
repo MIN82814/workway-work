@@ -1,7 +1,7 @@
-.user-btn-close{
-    position: absolute;
-    top: 24px;
-    right: 24px;
+.user-btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 
@@ -12,17 +12,19 @@
     max-width: 1200px;
     width: 1200px;
   }
-  
+
   .custom-image-width {
     width: 700px;
-    flex-shrink: 0; /* 防止被壓縮 */
+    flex-shrink: 0;
+    /* 防止被壓縮 */
   }
-  
+
   .custom-form-width {
     width: 500px;
-    flex-shrink: 0; /* 防止被壓縮 */
+    flex-shrink: 0;
+    /* 防止被壓縮 */
   }
-  
+
   .custom-modal-size .modal-content {
     height: 720px;
   }
@@ -31,8 +33,31 @@
 
 
 
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* 背景色可自行調整 */
+    padding: 2rem;
+    z-index: 1050;
+    overflow-y: auto;
 
+  }
 
+  .navbar-collapse .nav-link {
+    font-size: 1.25rem;
+    /* 放大手機選單字 */
+    margin-bottom: 1rem;
+  }
 
-
-
+  /* 讓關閉按鈕顯示在右上角 */
+  .navbar-collapse .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
