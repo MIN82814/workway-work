@@ -1,67 +1,43 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-3">
-  <div class="container">
-    <a class="navbar-brand" href="../pages/index.html"><img src="/assets/images/logo.svg" alt="logo" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="container justify-content-lg-between justify-content-end">
+    <a class="navbar-brand order-0 me-auto" href="../pages/index.html"><img src="/assets/images/logo.svg"
+        alt="logo" /></a>
+
+    <button class="navbar-toggler order-2 order-lg-1 border-0 " type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <button type="button" class="btn-close d-lg-none" data-bs-toggle="collapse"
+    <div class="collapse navbar-collapse px-5 px-lg-0" id="navbarSupportedContent">
+      <button type="button" class="btn-close d-lg-none " data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"></button>
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center fs-14 fs-lg-16 ">
+        <li class="nav-item mb-4 mb-lg-0 py-4 py-lg-0">
           <a class="nav-link me-3" href="#">服務方案</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mb-4 mb-lg-0 py-4 py-lg-0">
           <a class="nav-link me-3" href="#">關於職旅</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item py-4 py-lg-0">
           <a class="nav-link me-3" href="contact.html">聯絡我們</a>
         </li>
       </ul>
+      <button type="button" class="btn btn-secondary d-block d-lg-none mt-auto mb-lg-0 mb-4 rounded-12 fs-20 fw-bold "
+        data-bs-toggle="modal" data-bs-target="#loginModal">登入/註冊</button>
     </div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-dark border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button "
+      class="btn btn-outline-dark border  order-1 order-lg-2 rounded-12 rounded-lg-16 fs-14 fs-lg-16"
+      data-bs-toggle="modal" data-bs-target="#loginModal">
       登入/註冊
     </button>
 
-    <!-- Modal 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content border-0 overflow-hidden">
-          <div class="card shadow border-0">
-            <div class="d-flex p-0">
-
-              <div class="w-700 d-none d-lg-block">
-                <img src="/assets/images/about/login.png" class="img-fluid rounded-start  object-cover" alt="登入圖片">
-              </div>
-            
-              <div class="w-500 w-lg-500 w-100">
-                <div class="card-body position-relative">
-                  <button type="button" class="btn-close user-btn-close " data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                  <div class="text-center ">
-                    <h1 class="card-title my-5 fs-2">登入</h1>
-                    <div>
-                      <button type="button" class="btn btn-outline-natural text-black w-100"><img
-                          src="/assets/images/icon/google.svg" alt="google icon" class="me-1">Google</button>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>-->
 
 
 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--登入-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down custom-modal-size">
         <div class="modal-content border-0 overflow-hidden">
           <div class="card shadow border-0 h-100">
@@ -78,7 +54,7 @@
                   <div class="text-center">
 
                     <h1 class="card-title my-5 fs-2">登入</h1>
-                    <div class="mb-5 mb-lg-6">
+                    <div class="mb-5 mb-lg-6" px-lg-5 px-6>
                       <div class="mb-4">
                         <button type="button"
                           class="btn btn-outline-natural text-black w-100 rounded-12 rounded-lg-16"><img
@@ -95,12 +71,12 @@
                       </div>
                       <hr class="my-5">
                       <!-- 帳號 -->
-                      <div class="form-floating mb-3">
+                      <div class="form-floating mb-4">
                         <input type="email" class="form-control" id="floatingInput" placeholder="帳號">
                         <label for="floatingInput">帳號</label>
                       </div>
                       <!-- 密碼 -->
-                      <div class="form-floating position-relative mb-3">
+                      <div class="form-floating position-relative mb-4">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="密碼">
                         <label for="floatingPassword">密碼
                         </label>
@@ -126,7 +102,8 @@
                     </div>
                     <!-- 註冊連結 -->
                     <p class="text-center fs-14 fs-lg-14  mb-0">
-                      不是會員？<a href="#" class="text-decoration-none">快速註冊</a>
+                      不是會員？<a href="#" class="text-decoration-underline text-primary" data-bs-target="#registerModal"
+                        data-bs-toggle="modal">快速註冊</a>
                     </p>
                   </div>
                 </div>
@@ -136,6 +113,106 @@
         </div>
       </div>
     </div>
+
+
+    <!--註冊-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down custom-modal-size">
+        <div class="modal-content border-0 overflow-hidden">
+          <div class="card shadow border-0 h-100">
+            <div class="d-flex p-0 h-100 flex-row-reverse">
+              <div class="d-none d-lg-block custom-image-width">
+                <img src="/assets/images/about/register.png" class="img-fluid w-100 h-100 object-fit-cover" alt="登入圖片">
+              </div>
+
+              <div class="flex-fill custom-form-width">
+                <div class="card-body position-relative d-flex flex-column justify-content-center h-100 p-4">
+                  <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                  <div class="text-center">
+
+                    <h1 class="card-title my-5 fs-2">註冊</h1>
+                    <div class="mb-5 mb-lg-6 px-lg-5 px-6">
+                      <div class="mb-4">
+                        <button type="button"
+                          class="btn btn-outline-natural text-black w-100 rounded-12 rounded-lg-16"><img
+                            src="/assets/images/icon/google.svg" alt="google icon" class="me-1"
+                            style="width: 20px;height: 20px;">Google</button>
+                      </div>
+
+                      <!-- Discord 按鈕 -->
+                      <div>
+                        <button type="button"
+                          class="btn btn-outline-natural text-black w-100 rounded-12 rounded-lg-16"><img
+                            src="/assets/images/icon/discord.svg" alt="discord icon" class="me-1"
+                            style="width: 20px;height: 20px;">Discord</button>
+                      </div>
+                      <hr class="my-5">
+                      <!-- 帳號 -->
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="帳號">
+                        <label for="floatingInput">帳號</label>
+                      </div>
+                      <!-- 密碼 -->
+                      <div class="form-floating position-relative mb-4">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="密碼">
+                        <label for="floatingPassword">密碼
+                        </label>
+                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                          <span class="material-symbols-outlined">
+                            visibility_off
+                          </span>
+                        </div>
+                      </div>
+                      <!-- 密碼 -->
+                      <div class="form-floating position-relative mb-4">
+                        <input type="password" class="form-control" id="floatingPasswordcheck" placeholder="密碼">
+                        <label for="floatingPasswordcheck">確認密碼
+                        </label>
+                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                          <span class="material-symbols-outlined">
+                            visibility_off
+                          </span>
+                        </div>
+                      </div>
+
+
+                      <!-- 同意條款隱私 -->
+                      <div class="mb-4 text-start fs-14">
+                        <div class="form-check">
+                          <input class="form-check-input me-1" type="checkbox" value="agree_privacy_service"
+                            id="agree_privacy_service" checked>
+                          <label class="form-check-label" for="agree_privacy_service">
+                            我同意<a href="../pages/terms.html" class="text-decoration-underline text-primary">服務條款</a>和
+                            <a href="../pages/privacy.html" class="text-decoration-underline text-primary">隱私政策</a>
+                          </label>
+                        </div>
+                      </div>
+
+                      <!-- 登入按鈕 -->
+                      <div class="d-grid mb-3 rounded-12 rounded-lg-16">
+                        <button type="button" class="btn btn-dark py-12">送出<span
+                            class="material-symbols-outlined align-middle ms-1 ms-lg-1 fs-20">
+                            chevron_right
+                          </span></button>
+                      </div>
+                    </div>
+                    <!-- 註冊連結 -->
+                    <p class="text-center fs-14 fs-lg-14  mb-0">
+                      已經會員？<a href="#" class="text-decoration-underline text-primary" data-bs-target="#loginModal"
+                        data-bs-toggle="modal">直接登入</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
   </div>
   </div>

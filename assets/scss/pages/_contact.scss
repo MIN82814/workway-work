@@ -2,17 +2,27 @@
     color: #4A69E8;
     text-decoration: underline;
 }
-.contact-form-img{
-&::after{
-content:"";
-width: 120px;
-height: 160px;
-display: block;
-background-image: url(/assets/images/contact/form-top.svg);
-right: 0;
-top: 0;
-margin-right: 40px;
-margin-top: -137px;
-position: absolute;
-}
+
+.contact-form-img {
+    &::after {
+        display: none;
+
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        &::after {
+            content: "";
+            width: 120px;
+            height: 160px;
+            display: block;
+            background-image: url(/assets/images/contact/form-top.svg);
+            right: 0;
+            top: 0;
+            margin-right: 40px;
+            margin-top: -137px;
+            position: absolute;
+
+        }
+    }
 }

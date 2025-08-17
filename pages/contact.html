@@ -14,31 +14,32 @@
 <body>
   <%- include('./layout/navbar'); -%>
     <main class="bg-natural-95">
-      <div class="container py-7">
+      <div class="container py-6 py-lg-7">
         <div class="pb-6">
           <h1 class="fs-2 text-center mb-5">聯絡我們</h1>
-          <p class="text-center">
+          <p class="text-center text-natural-50">
             每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。
           </p>
         </div>
         <div class="row justify-content-center">
-          <div class="col-10 position-relative">
+          <div class="col-12 col-lg-10 position-relative">
             <div class="contact-form-img">
-              <div class="card rounded-panel p-6 shadow">
+              <div class="card rounded-panel p-5 p-lg-6 shadow">
                 <form>
                   <!--基本資料-->
-                  <div class="d-flex gap-4 border-bottom pb-6 mb-5">
+                  <div class="flex-column flex-lg-row gap-lg-5 gap-4 border-bottom pb-6 mb-5">
                     <!--左表單-->
-                    <div class="left-width flex-shrink-0">
-                      <h2 class="fs-4 mb-3">基本資料</h2>
-                      <p class="text-secondary">
-                        欄位皆為<span class="badge rounded-pill bg-danger ms-1">必填</span>
+                    <div
+                      class="left-width flex-shrink-0 d-flex align-items-center align-items-lg-start flex-lg-column mb-user-smtitle">
+                      <h2 class="mb-0 mb-lg-3 fs-lg-4 fs-20">基本資料</h2>
+                      <p class="text-natural-50 ms-auto ms-lg-0 fs-14 fs-lg-6">
+                        欄位皆為<span class="badge rounded-pill bg-danger ms-1 text-white">必填</span>
                       </p>
                     </div>
                     <!--右表單-->
                     <div class="w-100">
                       <!--姓名-->
-                      <div class="mb-5">
+                      <div class="mb-4 mb-lg-5">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="name" name="name" placeholder="姓名" />
                           <label for="name">姓名</label>
@@ -97,12 +98,13 @@ occupation_status" data-bs-toggle="dropdown" aria-expanded="false">
                     </div>
                   </div>
                   <!--諮詢需求-->
-                  <div class="d-flex gap-4 border-bottom pb-6 mb-5">
+                  <div class="flex-column flex-lg-row gap-4 border-bottom pb-6 mb-5">
                     <!--左表單-->
-                    <div class="left-width flex-shrink-0">
-                      <h2 class="fs-4 mb-3">諮詢需求</h2>
-                      <p class="text-secondary">
-                        欄位皆為<span class="badge rounded-pill bg-danger ms-1">必填</span>
+                    <div
+                      class="left-width flex-shrink-0 d-flex align-items-center align-items-lg-start flex-lg-column mb-user-smtitle">
+                      <h2 class="mb-0 mb-lg-3 fs-lg-4 fs-20">諮詢需求</h2>
+                      <p class="text-natural-50 ms-auto ms-lg-0 fs-14 fs-lg-6">
+                        欄位皆為<span class="badge rounded-pill bg-danger ms-1 text-white">必填</span>
                       </p>
                     </div>
                     <!--右表單-->
@@ -189,11 +191,14 @@ consult_expert" data-bs-toggle="dropdown" aria-expanded="false">
                     </div>
                   </div>
                   <!--聯絡偏好-->
-                  <div class="d-flex gap-4 pb-6">
+                  <div class="flex-column flex-lg-row gap-4 pb-6">
                     <!--左表單-->
-                    <div class="left-width flex-shrink-0">
-                      <h2 class="fs-4 mb-3">聯絡偏好</h2>
-                      <p class="text-secondary">欄位皆為選填</p>
+                    <div
+                      class="left-width flex-shrink-0 d-flex align-items-center align-items-lg-start flex-lg-column mb-user-smtitle">
+                      <h2 class="mb-0 mb-lg-3 fs-lg-4 fs-20">聯絡偏好</h2>
+                      <p class="text-natural-50 ms-auto ms-lg-0 fs-14 fs-lg-6">
+                        欄位皆為選填
+                      </p>
                     </div>
                     <!--右表單-->
                     <div class="w-100">
@@ -362,13 +367,15 @@ consult_expert" data-bs-toggle="dropdown" aria-expanded="false">
                   </div>
                 </form>
                 <div class="mb-5 d-flex justify-content-center">
-                  <button type="button" class="btn btn-outline-secondary border me-5">
-                    重新填寫<span class="material-icons-outlined align-bottom ms-1">
+                  <button type="button" class="btn btn-outline-dark border me-5 d-flex align-items-center">
+                    重新填寫
+                    <span class="material-symbols-outlined align-middle ms-1 fs-3">
                       chevron_right
                     </span>
                   </button>
-                  <button type="button" class="btn btn-dark">
-                    確認送出<span class="material-icons-outlined align-bottom ms-1">
+                  <button type="button" class="btn btn-dark d-flex align-items-center">
+                    確認送出
+                    <span class="material-symbols-outlined align-middle ms-1 fs-3">
                       chevron_right
                     </span>
                   </button>
